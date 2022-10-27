@@ -1,0 +1,267 @@
+<html>
+<head><title>UMBB Stage</title>
+<link rel="stylesheet" type="text/css" href="page2.css">
+<link rel="icon" type="image/png" href="log.png"/>
+ <script type="text/javascript">
+ 	window.addEventListener('mouseup',function(event)
+ 	{
+ 		var box =document.getElementById('box1');
+ 		var input =document.getElementById('cnxinput');
+ 		if (event.target != box && event.target.parentNode != input && event.target.parentNode != box)
+ 		 {
+ 		 	box.style.display ='none' ;
+ 	     }
+ 	});
+ </script>
+<body>
+<!--------------------menu1----------------->
+<header>
+	<img src="capture123.png" class="header">
+	<nav>
+		<div class="menu" >
+			<img src="logo.png" class="logo">
+			<div class="slogo">
+				Stage pour l'université<br> de Boumerdes
+				</div>
+				<ul>
+				<li><a href="page acceuil.html">Acceuil<span></span><span></span></a></li>
+				<li><a href="conseiln.html">Conseils<span></span><span></span></a></li>
+			    </ul>
+		</div>
+	</nav>
+</header>
+<!----------------menu3----------------------------------------------------->
+<section>
+	<div class="menu3">
+	<div class="menu3-rectangle-a">
+		<a href="page acceuil.html">Acceuil</a>
+	</div>
+
+	<div class="menu3-triangle-a-blanc">
+		
+	</div>
+
+	<div class="menu3-triangle-a">	
+	
+	</div>
+	
+</div>
+
+<!---------------------------compte------------->
+<section>
+
+	<aside>
+		<div class="new">
+			<image src="2d.gif" width="322" height="100%">
+		<param name="movie" value="2d.swf"/>
+	</object>
+		</div>
+		<br>
+		
+</aside>
+	<aside>
+<div class="def">
+			<h2 >Qui Sommes Nous ! </h2>
+			<br>
+			Vous etes étudiant de l'université de Boumerdes  Vous cherchez un stage et vous êtes un peu perdu?<br><br>
+            Notre Site web est la pour vous aider, C’est une plateforme spécialisée dans la recherche des stages,
+            on vous donne la possibilite de choisir le stage que vous voulez  selon la durée, l emplacement et meme  l entreprise. <br><br>
+             Meme si vous n'appartenez pas a l'université, vous pouvez consulter la page de conseils  qui vous a aider
+              durant votre stage.<br><br>
+           
+            stage pour l'université de Boumerdes  permet aussi aux entreprises de recruter des stagiaires et de diffuser des offres de stage.
+		</div>
+		<br><br>
+		<!---<img src="math.jpg"class="video">----->
+	</aside>
+<div class="connexion-div">
+				<!--cnx-->
+				<div id="box1">
+					<h2 style="margin: 0 0 30px;padding: 0;color:#10205F; text-align:center;">Connexion</h2>
+					<form method="GET" action="page acceuil.html">
+						<div id="cnxinput" >
+						<input type="text" name="matricule" required="">
+							<label>Matricule</label>
+					    </div>
+			<br>
+						<div id="cnxinput">
+							<input type="password" name="password" required="">
+							<label>Mot de passe</label>
+						</div>
+			<br>
+			Mot de passe oublier ?
+
+<!---				
+<?php
+$cnx=mysqli_connect("localhost","root","","projet");
+//connexion
+if($cnx)
+{
+if(isset($_GET['submit']))
+{
+  	$matricule=$_GET['matricule'];
+   	$password=sha1($_GET['password']);
+   	
+   	if ($matricule&&$password)
+   	{    
+		$re="select * from inscriptionetd where matricule='$matricule' && password='$password'";
+     	$resu=$cnx->query($re);
+     	$rows=mysqli_num_rows($resu);
+     	if ($rows==1)
+     	{
+     		header('location: offre.html');
+     		echo "good";
+
+     	}
+     	else
+     	{
+     		echo "vous n avez pas memebre ";
+     	}
+     	
+	}
+
+	
+
+}
+}
+?>
+---------------------------------------------->
+			<br><br>
+						<input type="submit" name="submit" value="Connexion" id="sub"> &nbsp; &nbsp; &nbsp;
+						<br>
+						<h4 align="center" >Vous n'avez pas un compte ? </h3>
+							<br>
+		    	<div class="etd2" style="background-color:#13AA13;">
+	 	         <a href="inscriptionetd.html">Inscription</a>
+	 	         </div>	
+					</form>	
+		    	</div>
+		    	
+				<button class="menu-text-cnx" onclick="document.getElementById('box1').style.display='block'">Connexion</button>
+			</div>
+		</div>
+	</nav>
+  <div class="entrep">
+  	<h2 align="center">Nos paretenaires </h2>
+  	<br>
+  	<img class="ent-img" src="entreprise.gif">
+  	<br><br>
+  	<div class="titre_domaine">
+	<h2 align="center">Les facultés de l'universitè de Boumerdes  </h2></div>
+</div>
+
+ <div class="domaine">
+<div class="info">
+	<br><img class="domaine-img" src="fs2.jpg">
+	<div class="titre"><h2>Faculté 
+		<br>des Sciences</h2></div>
+	<div class="text">
+	Mathématiques<br>
+	Physique<br>
+	Chimie<br>
+	Informatique<br>
+	Biologie<br>
+	Langues Etrangères<br>
+	Cellule Sciences Agronomiques<br>
+	Cellule Infotronique<br>
+	</div>
+</div>
+<div class="bio">
+	<br><img class="domaine-img" src="fsi2.jpg">
+	<div class="titre"><h2>Faculté<br> des Sciences de l’Ingénieur</h2></div>
+	<div class="text-t">
+	Génie des Procédés Industriels<br>
+	Technologie Alimentaire<br>
+	Génie de l’Environnement<br>
+	Génie Mécanique<br>
+	Energétique<br>
+	Maintenance Industrielle<br>
+	Génie des Matériaux<br>
+	Génie Civil<br>
+	</div>
+</div>
+<div class="phy">
+	<br><img class="domaine-img" src="fd.jpg">
+	<div class="titre"><h2>Faculté<br> de Droit</h2></div>
+	<div class="text">
+	Droit Public<br>
+	Droit Privé<br>
+	Sciences Politiques<br>
+	Cellule Langue et Littérature Arabes<br>
+	</div>
+</div>
+<div class="math">
+	<br><img class="domaine-img" src="segc1.jpg">
+	<div class="titre"><h2>Faculté<br> des Sciences Economiques</h2></div>
+	<div class="text-t">
+	Sciences de Gestion<br>
+	Sciences Commerciales<br>
+	Sciences Economiques<br>
+	</div>
+</div>
+</div>
+<!--footer-->
+<footer>
+	<div id="footer">
+		<table bgcolor=#002261>
+			<tr>
+				<td width="350">
+					<img src="logo.png" class="logo-footer">
+				</td>
+				<td width="300px">
+				<br>
+			        <b>Etudiant</b><br><br>
+			        <a href="inscriptionetd.html">Consulter les offres </a><br>
+					<a href="inscriptionetd.html">Choisir un stage</a><br>
+					<a href="inscriptionetd.html">Participer au forum</a><br>
+					<a href="inscriptionetd.html">Les offres enregistrés</a>
+				</td>
+				<td width="300px">
+					<br>
+					<b>Ensignant</b><br><br>
+					 <a href="inscritionentr.html">Consulter les offres </a><br>
+					<a href="inscritionentr.html">Proposer un sujet</a><br>
+					<a href="inscritionentr.html">Participer au forum</a><br>
+					<a href="inscritionentr.html">Les offres enregistrés</a>
+				</td>
+				<td width="400px">
+			<br>
+					<b>Conseils</b><br><br>
+					<a href="conseiln.html">Aspect juridique et legal du stage</a><br>
+					<a href="conseil1n.html">La recherche de stage</a><br>
+					<a href="conseil7n.html">La reussite de stage </a><br>
+					<a href="conseil5n.html">Le rapport de stage</a>
+				</td>
+
+			</tr>
+			<tr>
+				<td colspan="4" align="center">
+					<br><br><hr align="center" width="1200px" >
+			<br>
+					<img id="rx"src="facebook.png">
+					<img id="rx"src="twiter.png">
+					<img id="rx"src="in.png">
+					<img id="rx"src="youtube.png">
+			<br><br>
+					<a href="">2019 all copy right reserved</a>
+				</td>
+			</tr>
+		</table>			
+	</div>
+</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
